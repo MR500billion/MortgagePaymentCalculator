@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage repayment calculator</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="Pc-layout">
+    <div class="container">
+      <div id="heading">
+        <h1>Mortgage Calculator</h1>
+        <p id="clearall">Clear All</p>
+        
+    </div>
+    
+    
+    <div class="inpuVal" id="inputte">
+    <label for="amountNum">Mortgage Amount</label>
+    <span id="AmountSpan" class="Activestate">$</span>
+    <input type="text" id="amountNum" class="Activestate" >
+    </div>
+    <p class="ErrorText">This Field is Required</p>
+
+
+    <div class="InputRow">
+<div class="inpuVal">
+      <label for="MortgageTerm">Mortgage Term</label>
+      <span id="YearsSpan">years</span>
+      <input type="text" id="MortgageTerm">
+      <p class="ErrorText">This Field is Required</p>
+    </div>
+   
+    
+    <div class="inpuVal">
+      <label for="MortgageTerm">Interest rate</label>
+      <span id="RateSpan">%</span>
+      <input type="text" id="InterestRate">
+   <p class="ErrorText">This Field is Required</p>
+    </div>
+    
+
+    </div>
+    
+   
+
+    
+    <div class="inpuVal">
+    <p>Mortgage Type</p>
+    
+    
+    <div class="MortageCLass">
+    
+     
+    
+        <input type="radio" name="MortgageType" id="RadioForm1" >
+        <label for="RadioForm1" >
+        Repayment
+      </label>
+    </div>
+    
+    
+    <div class="MortageCLass">
+    
+      
+    
+        <input type="radio" name="MortgageType" id="RadioForm2" >
+        <label for="RadioForm2">
+        Interest Only
+      </label>
+    </div>
+ <p class="ErrorText">This Field is Required</p>
+    
+    
+    
+    
+    </div>
+    
+    
+    <button id="ButtonCal"> <img src="assets/images/icon-calculator.svg" alt=""> Calculate Repayments</button>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     </div>
+       <footer>
+        <div id="EmptyResult">
+          <img src="assets/images/illustration-empty.svg" alt="">
+          <h2>Results Shown here</h2>
+          <p>Complete form and click "calculate repayments"<br>
+            to see what your monthly repayments would be.
+          </p>
+    
+        </div>
+    
+        <div id="shownResult">
+    
+    
+          <h2>Your results</h2>
+          <p>Your results are shown below based on the information you provided. To adjust the results,edit the form and click "calculate repayments" again.</p>
+       
+       <div id="Month-overTem">
+        <div id="OverviewRepayments">
+          <p>Your monthly repayments</p>
+          <h2 id="MonthlyRepayments"></h2>
+        </div>
+    
+        <p id="PaymentOverTermLabel"> </p>
+        <h3 id="PaymentOverTerm"></h3>
+       </div>
+       
+       
+       
+       
+        </div>
+      
+     </footer>
+      
+  </div>
+
+
+ <script src="script.js"></script>
+</body>
+</html>

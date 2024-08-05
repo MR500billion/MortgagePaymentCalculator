@@ -1,0 +1,675 @@
+*{
+
+    padding: 0;
+    margin: 0;
+font-family: Plus Jakarta Sans
+;
+
+}
+
+.container{
+
+    background-color: white;
+    padding: 1.2em;
+}
+@media screen and (min-width:700px) {
+    body{
+
+        background-color: rgb(225, 255, 255);
+    }
+
+    .Pc-layout{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+padding: 5em;
+
+    }
+
+    
+
+    .container{
+
+        background-color: white;
+    }
+#heading{
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#heading p{
+
+    margin-top: 1em;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+/* inputs */
+
+
+
+
+
+.inpuVal{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    
+
+}
+
+
+input[type="text"] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid hsl(200, 26%, 54%);
+    height: 4em;
+    border-radius: .5em;
+    
+
+  }
+
+  
+
+
+#AmountSpan{
+
+    position: relative;
+    background-color:hsl(202, 86%, 94%);
+    height: 2.9em;
+    border-radius: .3em;
+    padding: .12em;
+    width: 3em;
+    top: 3.7em;
+    left: 0.1em;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: -3em;
+}
+
+#YearsSpan{
+
+   position: relative;
+    background-color:hsl(202, 86%, 94%);
+    height: .6em;
+    border-radius: .3em;
+    width: 2em;
+    padding: 1.26em;
+    top: 1.55em;
+    left: 7.1em;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+
+    
+}
+
+
+#RateSpan{
+
+    
+   position: relative;
+   background-color:hsl(202, 86%, 94%);
+padding: .95em 0;
+   border-radius: .3em;
+   width: 3em;
+   top: 1.55em;
+   left: 8.6em;
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+}
+.Activestate:active{
+
+    background-color: yellow;
+}
+
+
+
+.MortageCLass label{
+
+margin-left: .5em;
+font-weight: bold;
+}
+
+
+
+
+
+
+/*btn calc*/
+#ButtonCal{
+
+margin-top: 2em;
+height: 4em;
+width: 34em;
+padding: 1em 2em;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 1em;
+
+
+background-color: hsl(61, 70%, 52%);
+border-radius: 3em;
+
+
+
+border: none;
+
+font-weight: bolder;
+
+
+cursor: pointer;
+margin-bottom: 3em;
+
+
+} 
+
+
+
+
+.MortageCLass{
+
+border: 2px solid hsl(200, 26%, 54%);
+padding: 1em;
+margin-top: 1em;
+
+
+}
+
+.MortageCLass label{
+
+margin-left: .5em;
+font-weight: bold;
+}
+
+
+
+#amountNum{
+
+padding: 12px 4em;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+
+
+
+
+
+
+.InputRow{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+}
+.InputRow input{
+    margin-top: -2em;
+
+}
+
+.MortageCLass{
+
+border: 2px solid hsl(200, 26%, 54%);
+padding: 1em;
+margin-top: 1em;
+
+
+}
+
+.ErrorText{
+
+    color: red;
+    display:none ;
+}
+
+
+
+
+
+
+
+
+
+/* footer*/
+
+
+
+
+
+    footer{
+        background-color:hsl(202, 55%, 16%);
+        color: white;
+        width: 25em;
+padding: 8em 2em;
+border-top-right-radius: 1em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 3em;
+    }
+    
+
+    
+#EmptyResult{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+footer img{
+
+    height: 10em;
+}
+
+
+
+#shownResult{
+
+    padding: 1em;
+    display: none;
+    flex-direction: column;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+#shownResult>p{
+
+    color: rgb(195, 195, 195);
+    font-size: small;
+    margin-bottom: 8px;
+    margin-top: 2em;
+}
+
+#Month-overTem{
+background-color: hsl(201, 100%, 8%);
+padding: 1em;
+width: 18em;
+border-top: 4px solid yellow;
+border-radius: .5em;
+margin-top: 2em;
+    
+}
+#Month-overTem >p{
+    margin-top: 1em;
+}
+
+#OverviewRepayments{
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(187, 187, 187);
+  
+
+}
+#OverviewRepayments>p{
+
+
+    color: rgb(255, 247, 247);
+    opacity: .5;
+}
+
+
+#OverviewRepayments>h2{
+    margin-top: .3em;
+
+    color: yellow;
+    margin-bottom: .5em;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    
+body{
+
+    background-color:hsl(202, 55%, 16%);
+   
+}
+
+#heading p{
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+#clearall{
+
+    margin-bottom: 2em;
+}
+.ErrorText{
+    color: red;
+
+    display: none;
+}
+   .inpuVal{
+display: flex;
+flex-direction: column;
+
+    margin-bottom: 3em;
+    
+   }
+  
+ 
+input[type="text"]{
+    height: 3.6em;
+    border: 2px solid  hsl(200, 26%, 54%) ;
+    padding: 0 1em;
+border-radius: .5em;
+}
+
+
+#amountNum{
+
+    padding: 0 4em;
+    margin-bottom: -2em;
+}
+#AmountSpan{
+
+    background-color:hsl(202, 86%, 94%) ;
+    position: relative;
+top: 3.1em;
+left: .1em;
+height: 3em;
+width: 3em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-top-left-radius: .3em;
+border-bottom-left-radius: .3em;
+margin-top: -2em;
+
+
+}
+
+
+#YearsSpan{
+
+    position: relative;
+
+    top:3.1em 
+    ;
+
+    left:22.7em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+    background-color:hsl(202, 86%, 94%) ;
+    width: 5em;
+    height: 3em;
+    border-top-right-radius:.3em;
+    border-top-right-radius:.3em;
+    margin-top: -2em;
+}
+
+#RateSpan{
+
+
+    position: relative
+    ;
+
+    background-color:hsl(202, 86%, 94%) ;
+height: 3em;
+width: 4.1em;
+top: 3.1em;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+left: 23.6em;
+border-top-right-radius: .3em;
+border-bottom-right-radius: .3em;
+margin-top: -2em;
+
+}
+.MortageCLass{
+
+
+    border: 2px solid hsl(200, 26%, 54%);
+
+
+    margin-top: 1em;
+    height: 1.5em;
+    padding: 1em 1em;
+    cursor: pointer;
+}
+.MortageCLass label{
+
+
+    height: 10em;
+    width: 10em;
+}
+.MortageCLass>*{
+
+margin-left: 1em;
+}
+.MortageCLass:active{
+
+    background-color: hsl(60, 100%, 50%);
+
+}
+#ButtonCal{
+
+    height: 4em;
+    width: 30em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: hsl(61, 70%, 52%);
+ border: none;
+font-weight: bolder;
+
+border-radius: 2em;
+
+margin-top: -2em;
+margin-left: 1.9em;
+cursor: pointer;
+}
+#EmptyResult{
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+#EmptyResult img{
+
+    height: 14em;
+    
+}
+
+#EmptyResult h2{
+
+    color: white;
+}
+#EmptyResult p{
+
+    color:rgb(200, 200, 200);
+}
+#shownResult{
+
+    display: none;
+    flex-direction: column;
+    padding: 1em 3em;
+
+}
+#shownResult>h2{
+
+    color: white;
+
+}
+#shownResult>p{
+color: rgb(196, 196, 196);
+
+
+}
+#Month-overTem{
+    background-color: hsl(201, 100%, 8%);
+    padding: 1em;
+    width: 18em;
+    border-top: 4px solid yellow;
+    border-radius: .5em;
+    margin-top: 2em;
+  
+        
+    }
+    #Month-overTem >p{
+        margin-top: 1em;
+        color: rgb(159, 159, 159);
+    }
+    
+    #OverviewRepayments{
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgb(187, 187, 187);
+        color: white;
+      
+    
+    }
+    #OverviewRepayments>p{
+    
+    
+        color: rgb(255, 247, 247);
+        opacity: .5;
+    }
+    #PaymentOverTerm{
+        color: white;
+        margin-top: .3em;
+    }
+    
+    
+    #OverviewRepayments>h2{
+        margin-top: .3em;
+    
+        color: yellow;
+        margin-bottom: .5em;
+
+        font-size: 2.5em;
+    
+    }
+}
